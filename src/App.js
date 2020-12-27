@@ -30,6 +30,7 @@ export default function App() {
   return (
     <div className="App" >
       <ul class="navbar">
+      <li><a href="#contact">contact me</a></li>
         <li><a href="#sideprojects">projects</a></li>
         <li><a href="#selectexperiences">experience</a></li>
         <li><a href="#aboutme">about me</a></li>
@@ -75,20 +76,18 @@ export default function App() {
         }} />
 
       <div className="intro">
-        <img src={name} alt="myname!" />
+        <img src={name} class="slogan" alt="myname!" />
       </div>
 
       <div className="text">
         <Pane
           className="resume-effect"
           height={50}
-          width={430}
           display="flex"
+          position="absolute"
           background="#9f5f80"
           opacity={0.7}
           borderTopLeftRadius={5}
-          margin="auto"
-          marginTop={20}
           borderTopRightRadius={5}
           borderBottomLeftRadius={5}
           borderBottomRightRadius={5}
@@ -112,22 +111,17 @@ export default function App() {
 
       <div className="wrapper">
         <Pane
-          width={1250}
+          className="cover"
           height={2850}
           display="flex"
+          position="absolute"
           background="#ffe9d6"
           opacity={0.7}
           borderTopLeftRadius={5}
-          margin="auto"
-          marginTop={20}
           borderTopRightRadius={5}
           borderBottomLeftRadius={5}
           borderBottomRightRadius={5}
-          elevation={2}
-          float="center"
-          alignItems="center"
-          justifyContent="center">
-
+          elevation={2}>
 
           <div className="titles">
             <ul class="names">
@@ -135,15 +129,12 @@ export default function App() {
               <li class="sel" id="selectexperiences">SELECT EXPERIENCE</li>
               <li class="side" id="sideprojects">SIDE PROJECTS</li>
             </ul>
-
           </div>
 
           <div className="introduction">
             <Pane
               className="intro-effect"
-              width={930}
               height={480}
-              display="flex"
               background="linear-gradient(to right, #ffd5cd, #efbbcf, #c3aed6, #8675a9)"
               opacity={0.95}
               borderTopLeftRadius={8}
@@ -152,8 +143,8 @@ export default function App() {
               borderBottomLeftRadius={8}
               borderBottomRightRadius={8}
               elevation={3}
-              float="left"
-              alignItems="start">
+              float="center"
+              alignItems="center">
 
               <p class="para"> Hiya! My name is Yara Radwan. Welcome! 😺 <br /><br />I am currently a second year
         Computer Science Co-op student at the University of Toronto, with a
@@ -257,8 +248,6 @@ export default function App() {
                 <Item> <a href="#popup4" class="slidetitle"><p class="labels">TRANSLATION GAME</p></a> <img position="absolute" border="0" alt="game" src={tg} width="900" height="703" /> </Item>
               </Carousel>
 
-
-
               <div id="popup1" class="overlay">
                 <div class="popup">
                   <h2>🦋 MY PERSONAL WEBSITE 🦋</h2>
@@ -270,7 +259,7 @@ export default function App() {
       <br /> enjoy my own little home as much as I do. 😊
 		</p>
                   <div className="projectlink">
-                    <a href="https://github.com/radwin01/personal-website">
+                    <a href="https://github.com/radwin01/PersonalWebsite">
                       <img class="links" border="0" alt="github" src={git} width="70" height="70" />
                     </a></div>
                 </div>
@@ -330,17 +319,13 @@ export default function App() {
         </Pane>
       </div>
 
-      <div className="end">
-        <footer>
+      <div className="end" id="contact">
           <Pane
             className="leend"
             height={200}
-            width={1000}
             display="flex"
             background="linear-gradient(to right, #ffd5cd, #efbbcf, #c3aed6, #8675a9)"
             opacity={0.7}
-            margin="auto"
-            marginTop={20}
             borderTopLeftRadius={5}
             borderTopRightRadius={5}
             borderBottomLeftRadius={5}
@@ -374,7 +359,6 @@ export default function App() {
 
             </div>
           </Pane>
-        </footer>
       </div>
 
       <div className="credits">

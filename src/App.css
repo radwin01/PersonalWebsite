@@ -12,6 +12,7 @@
 }
 
 body {
+  display: flex;
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -20,16 +21,18 @@ body {
 }
 
 .snow {
-  position: fixed; 
+  position: fixed;
   width: 100%;
   height: 100%;
+  margin-top: -3130px;
 }
 
 .intro {
-  margin-top: 65px;
-  text-align: center;
-  align-items: center;
-  position: relative;
+  float: center;
+  position: absolute;
+  margin-top: -3100px;
+  left: 25%;
+  width: 50%;
 }
 
 .about, .sel, .side {
@@ -55,22 +58,25 @@ body {
   top: 450px;
 }
 
-.intro p {
-  position: relative;
-  font-family: sans-serif;
-  color: white;
-  font-size: 20px;
-  margin-top: -4px;
+.intro-effect {
+
+  position: absolute; 
 }
 
 .text {
-  position: relative;
   align-items: center;
   align-content: center;
+  left: 78%;
 }
 
 .ta {
   position: absolute;
+}
+
+.resume-effect {
+  width: 30%;
+  left: 35%;
+  margin-top: -2920px;
 }
 
 .resume-effect:hover {
@@ -78,23 +84,30 @@ body {
   background-image: linear-gradient(to right, #ffd5cd, #efbbcf, #c3aed6, #8675a9);
 }
 
-.resume {
-  position: relative;
-  background-color: rgba(240, 248, 255, 0);
-  border-color: rgba(240, 248, 255, 0);
-  color: #ffffff;
-  font-weight: 200;
-  outline: none;
-}
-
 .end p {
   font-size: 24px;
   text-align: center;
   position: absolute;
-  margin-top: -80px;
+  margin-top: -70px;
   margin-left: -5px;
   color: #2c003e;
   z-index: 1;
+}
+
+.end {
+  margin-top: 3180px;
+}
+
+.leend {
+  position: absolute;
+  display: flex;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  float: center;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 .effect, .effect:visited {
@@ -118,7 +131,17 @@ body {
 
 .credits {
   font-size: 15px;
+  position: absolute;
   color: #ffe9d6;
+  margin-top: 320px;
+  float: center;
+  left: 25%;
+  width: 50%;
+
+}
+
+.credits p {
+  text-align: center;
 }
 
 .titles {
@@ -128,30 +151,27 @@ body {
 .names {
   list-style-type: none;
   margin-top: 30px;
-  margin-left: -630px;
+  left: 1%;
   position: absolute;
 }
-
 
 .introduction {
   color: black;
   position: absolute;
   font-weight: 20px;
+  top: 4.5%;
+  width: 90%;
   font-size: 24px;
-  margin-left: -200px;
-  margin-top: -2100px;
 }
 
 .select {
   position: absolute;
-  margin-top: -280px;
-  margin-left: 3px;
+  top: 26.4%;
 }
 
 .showcase {
   position: absolute;
-  margin-top: 1945px;
-  margin-left: 3px;
+  top: 70%;
 }
 
 .labels {
@@ -172,7 +192,20 @@ body {
 }
 
 .wrapper {
-  margin-top: 70px;
+
+  margin: auto;
+}
+
+.cover {
+  position: absolute;
+  display: flex;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  margin-top: -2800px;
+  float: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .endlinks {
@@ -319,7 +352,7 @@ body {
 }
 
 .linkfem a:hover {
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .fem {
@@ -443,6 +476,7 @@ body {
   color: #b2deec;
   font-weight: bold;
   border-style: solid;
+  float: center;
   border-width: 4px;
   border-color: #0a043c;
 }
@@ -477,14 +511,14 @@ body {
 .name1, .name3 {
   font-size: 20px;
   position: absolute;
-  margin-left: 900px;
+  right: 3%;
   font-weight: bold;
 }
 
 .name2 {
   font-size: 20px;
   position: absolute;
-  margin-left: 990px;
+  right: 3%;
   font-weight: bold;
 }
 
@@ -629,7 +663,7 @@ body {
   margin-top: -60px;
 }
 
-.navbar{
+.navbar {
   list-style-type: none;
   position: fixed;
   z-index: 1;
@@ -637,7 +671,7 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #9f5f8093;
-  top:-5px;
+  top: -5px;
   width: 100%;
   padding-right: 5%;
   text-decoration: none;
