@@ -28,22 +28,22 @@ body {
 }
 
 .intro {
-  float: center;
   position: absolute;
-  margin-top: -3100px;
-  left: 25%;
-  width: 50%;
+  margin-top: -3070px;
+  left: 1.5vw;
+  width: 100vw;
+  height: 100vh;
 }
 
 .about, .sel, .side {
   font-family: 'Bebas Neue', cursive;
   position: absolute;
-  font-size: 70px;
+  font-size: 5.7vw;
   font-weight: 580px;
   letter-spacing: 3px;
   white-space: nowrap;
   color: #2c003e;
-  left: 100px;
+  left: 0%;
 }
 
 .about {
@@ -55,12 +55,16 @@ body {
 }
 
 .side {
-  top: 450px;
+  top: 500px;
 }
 
 .intro-effect {
-
   position: absolute; 
+  height: 65vh;
+  display: block;
+  overflow: auto;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .text {
@@ -69,14 +73,34 @@ body {
   left: 78%;
 }
 
-.ta {
-  position: absolute;
+.ta{
+  position: relative;
 }
 
 .resume-effect {
-  width: 30%;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 7%;
+  min-width: 30%;
   left: 35%;
-  margin-top: -2920px;
+  right: 35%;
+  display: inline-block;
+  margin-top: -2880px;
+}
+
+.resume {
+  color: #ffe9d6;
+  white-space: pre-wrap;
+  text-decoration: none;
+  font-size: 22px;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  max-height:100%;
+}
+
+.resume:hover {
+  color: #350c5c;
 }
 
 .resume-effect:hover {
@@ -87,8 +111,8 @@ body {
 .end p {
   font-size: 24px;
   text-align: center;
-  position: absolute;
-  margin-top: -70px;
+  position: relative;
+  margin-top: -10%;
   margin-left: -5px;
   color: #2c003e;
   z-index: 1;
@@ -105,7 +129,7 @@ body {
   left: 10%;
   right: 10%;
   float: center;
-  margin-top: 100px;
+  margin-top: 150px;
   align-items: center;
   justify-content: center;
 }
@@ -123,25 +147,10 @@ body {
 
 .socials {
   margin-left: -100px;
-  margin-top: 80px;
+  top: 20%;
   position: absolute;
   align-self: stretch;
-  size: 100ch;
-}
-
-.credits {
-  font-size: 15px;
-  position: absolute;
-  color: #ffe9d6;
-  margin-top: 320px;
-  float: center;
-  left: 25%;
-  width: 50%;
-
-}
-
-.credits p {
-  text-align: center;
+  size: 10ch;
 }
 
 .titles {
@@ -151,14 +160,13 @@ body {
 .names {
   list-style-type: none;
   margin-top: 30px;
-  left: 1%;
+  left: 10vw;
   position: absolute;
 }
 
 .introduction {
   color: black;
   position: absolute;
-  font-weight: 20px;
   top: 4.5%;
   width: 90%;
   font-size: 24px;
@@ -167,16 +175,33 @@ body {
 .select {
   position: absolute;
   top: 26.4%;
+  width: 90%;
 }
 
 .showcase {
   position: absolute;
-  top: 70%;
+  top: 72%;
+  left: 6%;
+  right: 6%;
+  width: 100vw;
+  height: 100vw;
+}
+
+.side-effect {
+  width: 70vw;
+  height: 50vw;
+}
+
+.slides {
+  width: 70vw;
+  height: 20vw;
 }
 
 .labels {
   color: #915791;
   margin: auto;
+  max-width: 90vw;
+  max-height: 50vw;
 }
 
 .para {
@@ -185,15 +210,13 @@ body {
   text-align: start;
 }
 
-.para a, a:visited, a:hover, a:link, a:active {
-  color: #00464d;
-  font-weight: 80;
+a, a:hover, a:link, a:active, a:visited {
   text-decoration: none;
 }
 
-.wrapper {
-
-  margin: auto;
+.para a, .para a:visited, .para a:hover, .para a:link, .para a:active {
+  color: #00464d;
+  font-weight: 80;
 }
 
 .cover {
@@ -202,21 +225,23 @@ body {
   width: 80%;
   left: 10%;
   right: 10%;
-  margin-top: -2800px;
+  margin-top: -2750px;
   float: center;
   align-items: center;
   justify-content: center;
 }
 
 .endlinks {
-  float:center;
-  margin-left: -80px;
+  position: absolute;
+  bottom: 12%;
+  max-width: 100%;
 }
 
 .links { 
+  max-width: 10%;
+  max-height: 10%;
+  margin-left: 4%;
   float: center; 
-  margin-top: 60px; 
-  margin-left: 60px;
   -webkit-transition: 0.6s ease-out;
   -moz-transition: 0.6s ease-out;
   transition: 0.6s ease-out;
@@ -230,9 +255,11 @@ body {
 
 .commarket {
   position: absolute;
-  margin-top: 740px;
-  width: 1100px;
-  height: 80px;
+  display: block;
+  overflow: auto;
+  margin-top: 795px;
+  width: 100%;
+  height: 90px;
   text-align: start;
   border-radius: 4px;  
   font-family: 'Playfair Display', serif;
@@ -243,25 +270,25 @@ body {
 }
 
 .comtel-title {
-  margin-left: 40px;
+  left: 3%;
   position: absolute;
-  margin-top: 9px;
+  margin-top: 7px;
   font-weight: bolder;
 }
 
 .composition {
   position: absolute;
   background-color: #9f5f80;
-  margin-top: 799px;
-  width: 1100px;
-  height: 65px;
+  margin-top: 870px;
+  width: 100%;
+  height: 35vh;
   border-radius: 8px;
 }
 
 .sales {
   position: absolute;
   color: #b2deec;
-  margin-left: -510px;
+  left: 3%;
   margin-top: 1px;
   font-size: 35px;
   font-family: 'Noto Serif SC', serif;
@@ -271,9 +298,12 @@ body {
 .com-desc {
   position: absolute;
   background-color: #f9bcdd;
-  width: 1100px;
-  height: 250px;
-  margin-top: 855px;
+  display: block;
+  overflow: auto;
+  min-width: 100%;
+  max-width: 100%;
+  height: 36vh;
+  margin-top: 920px;
   border-radius: 8px;
 }
 
@@ -282,26 +312,26 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #2c003e;
   font-size: 23px;
-  margin-top: 15px;
-  margin-left: 30px;
 }
 
 .feminstem {
-  position: absolute;
-  margin-top: 370px;
-  width: 1100px;
-  height: 80px;
-  text-align: start;
-  border-radius: 4px;  
-  font-family: 'Playfair Display', serif;
-  font-size: 40px;
-  font-weight: bolder;
-  color: #efbbcf;
-  background-color: #583d72;
+    position: absolute;
+    display: block;
+    overflow: auto;
+    margin-top: 400px;
+    width: 100%;
+    height: 90px;
+    text-align: start;
+    border-radius: 4px;  
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #efbbcf;
+    background-color: #583d72;
 }
 
 .feminstem-title {
-  margin-left: 40px;
+  left: 3%;
   position: absolute;
   margin-top: 7px;
   font-weight: bolder;
@@ -309,17 +339,17 @@ body {
 
 .femposition {
   position: absolute;
+  margin-top: 477px;
   background-color: #9f5f80;
-  margin-top: 425px;
-  width: 1100px;
-  height: 65px;
+  width: 100%;
+  height: 35vh;
   border-radius: 8px;
 }
 
 .fem-mentor {
   position: absolute;
   color: #b2deec;
-  margin-left: -510px;
+  left: 3%;
   margin-top: 1px;
   font-size: 35px;
   font-family: 'Noto Serif SC', serif;
@@ -329,9 +359,12 @@ body {
 .fem-desc {
   position: absolute;
   background-color: #f9bcdd;
-  width: 1100px;
-  height: 220px;
-  margin-top: 480px;
+  display: block;
+  overflow: auto;
+  min-width: 100%;
+  max-width: 100%;
+  height: 35vh;
+  margin-top: 525px;
   border-radius: 8px;
 }
 
@@ -340,13 +373,17 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #2c003e;
   font-size: 23px;
-  margin-top: 15px;
+}
+
+.linkfem {
+  margin-top: 2%;
 }
 
 .linkfem a {
   color: #b2deec;
   font-weight: bold;
   border-style: solid;
+  float: center;
   border-width: 4px;
   border-color: #0a043c;
 }
@@ -357,8 +394,6 @@ body {
 
 .fem {
   font-family: 'Nunito', sans-serif;
-  align-items: center;
-  justify-content: center;
   text-transform: uppercase;
   font-size: 19px;
   font-weight: bold;
@@ -367,16 +402,19 @@ body {
   color: rgb(255, 255, 255);
   cursor: pointer;
   padding: 8px 16px;
-  position: absolute;
-  margin-top: 640px;
-  margin-left: 390px;
+  margin-top: 50px;
+  float: inline-end;
+  white-space: nowrap;
+  position: relative;
 }
 
 .uoft {
   position: absolute;
+  display: block;
+  overflow: auto;
   margin-top: -3px;
-  width: 1100px;
-  height: 80px;
+  width: 100%;
+  height: 90px;
   text-align: start;
   border-radius: 4px;  
   font-family: 'Playfair Display', serif;
@@ -392,7 +430,7 @@ body {
 }
 
 .uoft-title {
-  margin-left: 40px;
+  left: 3%;
   position: absolute;
   margin-top: 7px;
   font-weight: bolder;
@@ -408,7 +446,7 @@ body {
 .uoft-ta {
   position: absolute;
   color: #b2deec;
-  margin-left: -505px;
+  left: 3%;
   font-size: 35px;
   font-family: 'Noto Serif SC', serif;
   font-weight: lighter; 
@@ -417,9 +455,12 @@ body {
 .uoft-desc {
   position: absolute;
   background-color: #f9bcdd;
-  width: 1100px;
-  height: 220px;
-  margin-top: 110px;
+  display: block;
+  overflow: auto;
+  min-width: 100%;
+  max-width: 100%;
+  height: 35vh;
+  margin-top: 130px;
   border-radius: 8px;
 }
 
@@ -428,35 +469,30 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #2c003e;
   font-size: 23px;
-  margin-top: 15px;
-  margin-left: 20px;
 }
 
 .position {
   position: absolute;
   background-color: #9f5f80;
-  margin-top: 57px;
-  width: 1100px;
-  height: 65px;
+  margin-top: 75px;
+  width: 100%;
+  height: 35vh;
   border-radius: 8px;
 }
 
 .subject {
   background-color: #ffffff;
-  position: absolute;
-  margin-top: 65px;
-  margin-left: 410px;  
-  width: 100px;
+  position: relative;
+  width: 30%;
+  margin-left: 300px;
   height: 35px;
   border-radius: 6px;
 }
 
 .topic {
   background-color: #ffffff;
-  position: absolute;
-  margin-top: 435px;
-  margin-left: 420px;  
-  width: 170px;
+  position: relative;
+  width: 30%;
   height: 35px;
   border-radius: 6px;
 }
@@ -471,6 +507,9 @@ body {
   border-radius: 6px;
 }
 
+.linka08 {
+  margin-top: 2%;
+}
 
 .linka08 a {
   color: #b2deec;
@@ -487,8 +526,6 @@ body {
 
 .a08 {
   font-family: 'Nunito', sans-serif;
-  align-items: center;
-  justify-content: center;
   text-transform: uppercase;
   font-size: 19px;
   font-weight: bold;
@@ -497,9 +534,10 @@ body {
   color: rgb(255, 255, 255);
   cursor: pointer;
   padding: 8px 16px;
-  position: absolute;
-  margin-top: 268px;
-  margin-left: 390px;
+  margin-top: 50px;
+  float: inline-end;
+  white-space: nowrap;
+  position: relative;
 }
 
 .uoft-subject, .femin-subject1, .femin-subject2 {
@@ -508,18 +546,18 @@ body {
   font-size: 35px;
 }
 
-.name1, .name3 {
+.name1, .name2, .name3 {
   font-size: 20px;
   position: absolute;
-  right: 3%;
+  display: block;
+  overflow: auto;
   font-weight: bold;
 }
 
-.name2 {
-  font-size: 20px;
-  position: absolute;
-  right: 3%;
-  font-weight: bold;
+.slogan {
+  max-width:100%;
+  height: auto;
+  max-height:100%;
 }
 
 .a08:hover, .fem:hover {
@@ -534,15 +572,18 @@ body {
 
 .slidetitle {
   background-image: linear-gradient(to right, #ffd5cd, #efbbcf, #c3aed6, #8675a9);
-  color: #b2deec;
-  padding-left: 13px;
+  position: absolute;
   border-radius: 5px;
   font-family: 'Secular One', sans-serif;
   position: absolute;
   font-weight: bold;
-  font-size: 65px;
-  letter-spacing: 15px;
+  font-size: 3.5vw;
+  letter-spacing: 7px;
   animation: glow .5s infinite alternate;
+  max-width: 50%;
+  height: auto;
+  max-height: 50%;
+  white-space: pre-wrap;
 }
 
 .glow {
@@ -623,7 +664,7 @@ body {
 .popup .close {
   position: absolute;
   margin-top: -70px;
-  margin-left: 240px;
+  margin-left: 42%;
   transition: all 200ms;
   font-size: 40px;
   border-radius: 60px;
@@ -656,7 +697,6 @@ body {
   color: #45046a;
   font-weight: bold;
 }
-
 
 .projectlink {
   margin-left:-40px;
@@ -700,4 +740,30 @@ body {
   float: left;
   margin-top: 5px;
   padding-left: 2%;
+}
+
+.sideimage {
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+.enjoy {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.credits {
+  font-size: 15px;
+  position: absolute;
+  color: #ffe9d6;
+  margin-top: 400px;
+  float: center;
+  left: 25%;
+  width: 50%;
+}
+
+.credits p {
+  text-align: center;
 }
