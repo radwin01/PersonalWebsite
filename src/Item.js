@@ -4,9 +4,9 @@ export default styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px;
-  width: 900px;
+  width: 90vw;
+  height: 50vw;
   background-color: pink;
   margin: 15px;
-  font-size: 4em;
+  font-size: 1vw;
 `;
