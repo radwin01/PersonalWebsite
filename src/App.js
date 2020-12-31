@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import Particles from 'react-particles-js';
-import { Pane, Button } from 'evergreen-ui'
+import { Pane } from 'evergreen-ui'
 import Card from 'react-bootstrap/Card';
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
@@ -82,7 +82,6 @@ export default function App() {
       <div className="text">
         <Pane
           className="resume-effect"
-          height={50}
           display="flex"
           position="absolute"
           background="#9f5f80"
@@ -95,17 +94,11 @@ export default function App() {
           float="center"
           alignItems="center"
           justifyContent="center">
+          
+          <a class="resume" href='https://drive.google.com/file/d/1y1Bx93akLQTKsSh3GPg1ueAMFtJZ341W/view?usp=sharing'>
+            {'\u2728'} click here to view my resume! {'\u2728'} 
+          </a>
 
-          <Button
-            is="a" href='https://drive.google.com/file/d/1nh9WgRZcAN8VvAGD5od6SzQSlCVwK73G/view?usp=sharing'
-            className="resume"
-            appearance="minimal"
-            size={500}
-            fontSize={23}>
-            <div className="effect">
-              {'\u2728'} click here to view my resume! {'\u2728'}
-            </div>
-          </Button>
         </Pane>
       </div>
 
@@ -134,7 +127,6 @@ export default function App() {
           <div className="introduction">
             <Pane
               className="intro-effect"
-              height={480}
               background="linear-gradient(to right, #ffd5cd, #efbbcf, #c3aed6, #8675a9)"
               opacity={0.95}
               borderTopLeftRadius={8}
@@ -154,7 +146,7 @@ export default function App() {
         of course, coding! I was able to combine my love for CS and helping others by working as a Teaching Assistant
         for <a href="https://utsc.calendar.utoronto.ca/course/csca08h3">CSCA08</a> this fall. <br /><br />
 
-        I have experience in: Python, C, Java, React, Neo4j, MongoDB. Please enjoy my website! 😸
+        I have experience in: Python, C, Java, ReactJS, Bash, Neo4j, MongoDB. Please enjoy my website! 😸
         <br /> <br />~ Yara 🌸
         </p>
             </Pane>
@@ -176,50 +168,50 @@ export default function App() {
               alignItems="start">
 
               <Card class="ta">
-                <Card.Header class="uoft"> <span class="uoft-title"> University of Toronto</span><p class="name1">SEP 2020 - DEC 2020</p></Card.Header>
+                <Card.Header class="uoft"> <p class="uoft-title"> University of Toronto <span class="name1">SEP 2020 - DEC 2020</span></p></Card.Header>
                 <Card.Body>
-                  <Card.Title class="position"> <span class="uoft-ta">Teaching Assistant</span></Card.Title>
-                  <Card.Title class="subject"><span class="uoft-subject">PYTHON</span></Card.Title>
+                  <Card.Title class="position"> <span class="uoft-ta">Teaching Assistant</span>
+                  {/* <div className="subject"><span class="uoft-subject">PYTHON</span></div> */}
+                  </Card.Title>
                   <Card.Text class="uoft-desc">
-                    <p class="ta-desc"> In the fall semester, I was offered to TA CSCA08 (Introduction to Computer Science), a course taken by <br />
-            first year Computer Science students. Some of my responsibilities included attending lectures and <br /> helping students complete weekly worksheets,
-            answering questions on Piazza, as well as invigilating <br /> and grading the midterms and the final exam. <br />I had a wonderful time being a Teaching Assistant and I hope
-            to do it again in the future! </p>
+                    <p class="ta-desc"> In the fall semester, I was offered to TA CSCA08 (Introduction to Computer Science), a course taken by
+            first year Computer Science students. Some of my responsibilities included: attending lectures and helping students complete weekly worksheets,
+            answering questions on Piazza, invigilating and grading the midterms and the final exam. I had a wonderful time being a Teaching Assistant and I hope
+            to do it again in the future! <br />
+            <div class="linka08">
+                    <a class="a08" href="https://www.utsc.utoronto.ca/~atafliovich/csca08/index.html">LEARN MORE ABOUT CSCA08</a> </div></p>
                   </Card.Text>
-                  <div class="linka08">
-                    <a class="a08" href="https://www.utsc.utoronto.ca/~atafliovich/csca08/index.html">LEARN MORE ABOUT CSCA08</a> </div>
                 </Card.Body>
               </Card>
 
               <Card class="femin">
-                <Card.Header class="feminstem"><span class="feminstem-title">FeminSTEM</span><p class="name2">AUG 2020</p></Card.Header>
+                <Card.Header class="feminstem"><p class="feminstem-title">FeminSTEM <span class="name2">AUG 2020</span></p></Card.Header>
                 <Card.Body>
-                  <Card.Title class="femposition"><span class="fem-mentor">Mathematics Mentor</span></Card.Title>
-                  <Card.Title class="topic"><span class="femin-subject1">PROBABILITY</span> <span class="femin-subject2">ESTIMATION</span></Card.Title>
+                  <Card.Title class="femposition"><span class="fem-mentor">Mathematics Mentor</span>
+                  {/* <div className="topic"> <span class="femin-subject1">PROBABILITY</span> <span class="femin-subject2">ESTIMATION</span> </div>  */}
+                  </Card.Title>
                   <Card.Text class="fem-desc">
-                    <p class="mentor-desc">In the summer of 2020, I was offered to be a Mathematics Mentor for FeminSTEM, an initiative made <br />
-            to introduce high school girls to the vast and diverse world of STEM. As a Mathematics mentor, I was responsible for preparing
-            and delivering a 2 hour jam-packed lesson filled with probability and <br />
-            estimation galore! I had a great time showing the girls how fun mathematics can be, and I hope to
-            <br /> return to mentoring next summer!
-            </p>
-                  </Card.Text>
+                    <p class="mentor-desc">In the summer of 2020, I was offered to be a Mathematics Mentor for FeminSTEM, an initiative made 
+                    to introduce high school girls to the vast and diverse world of STEM. As a Mathematics mentor, I was responsible for preparing 
+                    and delivering a 2 hour, jam-packed lesson filled with probability and estimation galore! I had a great time showing the girls how fun mathematics can be, and I hope to 
+                    return to mentoring next summer! <br />
                   <div class="linkfem">
-                    <a class="fem" href="https://www.feminstem.ca/">LEARN MORE ABOUT FEMINSTEM</a> </div>
+                    <a class="fem" href="https://www.feminstem.ca/">LEARN MORE ABOUT FEMINSTEM</a> </div> </p>
+                    </Card.Text>
                 </Card.Body>
               </Card>
 
               <Card class="comtel">
-                <Card.Header class="commarket"><span class="comtel-title">Comtel Marketing</span><p class="name3">JUN 2019 - AUG 2019</p></Card.Header>
+                <Card.Header class="commarket"><p class="comtel-title">Comtel Marketing <span class="name3">JUN 2019 - AUG 2019</span></p></Card.Header>
                 <Card.Body>
                   <Card.Title class="composition"><span class="sales">Sales Associate</span></Card.Title>
                   <Card.Text class="com-desc">
-                    <p class="sales-desc"> My first part-time job was at Comtel Marketing, located at the heart of downtown Toronto. As a <br /> Sales Associate,
-            I was responsible for selling the Globe and Mail Newspaper subscriptions, and later <br /> on, I would work on projects to earn
-            past subscibers back. I was the youngest worker, and yet, I <br />continually surpassed my managers' expectations! I was gifted an award for
-            being the top seller <br /> of the week thrice within the 3 months I worked there! This job really helped me develop confidence
-            in<br /> my communication ability, and I learned about how to be a persuasive and charasmatic seller just with <br /> my voice!
-            It was truly an honor to work at Comtel, and I will forever take the skills I learned there <br /> wherever I go!
+                    <p class="sales-desc"> My first part-time job was at Comtel Marketing, located at the heart of downtown Toronto. As a Sales Associate,
+            I was responsible for selling the Globe and Mail Newspaper subscriptions, and later on, I worked on projects to earn
+            past subscibers back. I was the youngest employee, and yet, I continually surpassed my managers' expectations! I was gifted an award for
+            being the top seller of the week thrice within the 3 months I worked there! This job really helped me develop confidence
+            in my communication ability, and I learned about how to be a persuasive and charasmatic seller just with my voice!
+            It was truly an honor to work at Comtel, and I will forever take the skills I learned there wherever I go!
             </p>
                   </Card.Text>
                 </Card.Body>
@@ -230,8 +222,6 @@ export default function App() {
           <div className="showcase">
             <Pane
               className="side-effect"
-              width={1100}
-              height={800}
               display="flex"
               background="rgb(255, 255, 255,0)"
               borderTopLeftRadius={8}
@@ -241,11 +231,11 @@ export default function App() {
               borderBottomRightRadius={8}
               float="left"
               alignItems="start">
-              <Carousel breakPoints={breakPoints}>
-                <Item> <a href="#popup1" class="slidetitle"><p class="labels">PERSONAL SITE</p></a> <img position="absolute" border="0" alt="personalwebsite" src={pw} width="900" height="700" /> </Item>
-                <Item> <a href="#popup2" class="slidetitle"><p class="labels">SPORTCRED</p></a> <img position="absolute" border="0" alt="sportcredproj" src={sc} width="900" height="700" />  </Item>
-                <Item> <a href="#popup3" class="slidetitle"><p class="labels">UNIX SHELL</p></a> <img position="absolute" border="0" alt="mockshell" src={ms} width="900" height="700" /> </Item>
-                <Item> <a href="#popup4" class="slidetitle"><p class="labels">TRANSLATION GAME</p></a> <img position="absolute" border="0" alt="game" src={tg} width="900" height="703" /> </Item>
+              <Carousel class="slides" breakPoints={breakPoints}>
+                <Item> <a href="#popup1" class="slidetitle"><p class="labels">THIS SITE!</p></a> <img class="sideimage" position="absolute" border="0" alt="personalwebsite" src={pw}/> </Item>
+                <Item> <a href="#popup2" class="slidetitle"><p class="labels">SPORTCRED</p></a> <img class="sideimage" position="absolute" border="0" alt="sportcredproj" src={sc}/> </Item>
+                <Item> <a href="#popup3" class="slidetitle"><p class="labels">UNIX SHELL</p></a> <img class="sideimage" position="absolute" border="0" alt="mockshell" src={ms}/> </Item>
+                <Item> <a href="#popup4" class="slidetitle"><p class="labels">TRANSLATION GAME</p></a> <img class="sideimage" position="absolute" border="0" alt="game" src={tg}/> </Item>
               </Carousel>
 
               <div id="popup1" class="overlay">
@@ -335,26 +325,28 @@ export default function App() {
             float="center"
             alignItems="center"
             justifyContent="center">
-
-            <p> enjoyed your stay? 😉 {"  "}feel free to connect with me
+              
+              <div className="enjoy">
+            <p> enjoyed your stay? 😉 feel free to connect with me
         on the following platforms! <br />
             </p>
+            </div>
 
             <div className="endlinks">
               <a href="https://github.com/radwin01">
-                <img class="links" border="0" alt="github" src={git} width="100" height="100" />
+                <img class="links" border="0" alt="github" src={git} />
               </a>
 
               <a href="https://www.linkedin.com/in/yara-r-81b044135/">
-                <img class="links" border="0" alt="linkedin" src={link} width="100" height="100" />
+                <img class="links" border="0" alt="linkedin" src={link} />
               </a>
 
               <a href="https://www.facebook.com/yr.rdwn011009/">
-                <img class="links" border="0" alt="facebook" src={fb} width="104" height="104" />
+                <img class="links" border="0" alt="facebook" src={fb} />
               </a>
 
               <a href="mailto:y9rdwn0110@gmail.com">
-                <img class="links" border="0" alt="gmail" src={mail} width="100" height="100" />
+                <img class="links" border="0" alt="gmail" src={mail} />
               </a>
 
             </div>
@@ -364,7 +356,7 @@ export default function App() {
       <div className="credits">
         <p> my personal website was created with React and is hosted on Netlify,
         with special help from Evergreen-UI, React Bootstrap and Textanim. <br /><br />
-        Copyright © 2021 Yara Radwan
+        Copyright © 2020 Yara Radwan
       </p>
       </div>
 
