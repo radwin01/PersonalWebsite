@@ -95,7 +95,7 @@ export default function App() {
           alignItems="center"
           justifyContent="center">
           
-          <a class="resume" href='https://drive.google.com/file/d/1y1Bx93akLQTKsSh3GPg1ueAMFtJZ341W/view?usp=sharing'>
+          <a class="resume" href='https://drive.google.com/file/d/1WnT3JWbA4bzrBBY86FTEKvFLmsvhH2F6/view?usp=sharing'>
             {'\u2728'} click here to view my resume! {'\u2728'} 
           </a>
 
