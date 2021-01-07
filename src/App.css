@@ -99,6 +99,10 @@ a, a:hover, a:link, a:active, a:visited {
   text-align: center;
 }
 
+.intro-effect {
+  padding: 1%;
+}
+
 .resume-effect:hover {
   cursor: pointer;
   background-image: linear-gradient(to right, #ffd5cd, #efbbcf, #c3aed6, #8675a9);
