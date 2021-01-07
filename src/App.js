@@ -263,7 +263,7 @@ export default function App() {
             </li>
             <li className="credits">
         <p> my personal website was created with React and is hosted on Netlify,
-        with special help from Evergreen-UI, React Bootstrap and Textanim. <br /><br />
+        with special help from Evergreen-UI and Textanim. <br /><br />
         Copyright © 2021 Yara Radwan
       </p>
       </li>
