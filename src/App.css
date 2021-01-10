@@ -15,8 +15,14 @@
 body {
   background-color: #583d72;
 }
+
 a, a:hover, a:link, a:active, a:visited {
   text-decoration: none;
+}
+
+.tech {
+  color: #45046a;
+  font-weight: bold;
 }
 
 .navbar {
