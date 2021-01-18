@@ -2,14 +2,18 @@ import './App.css';
 import React from 'react';
 import Particles from 'react-particles-js';
 import { Pane } from 'evergreen-ui'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
 
 // social media icons
 import git from './assets/social_media/github_logo.png';
-import fb from './assets/social_media/facebook_logo.png';
-import mail from './assets/social_media/gmail_logo.png';
-import link from './assets/social_media/linkedin_logo.png';
+
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 // title icons
 import name from './assets/my_name.gif';
@@ -17,6 +21,7 @@ import logo from './assets/my_logo.png';
 
 // side project icons
 import pw from './assets/projects/personal_site.png';
+import eh from './assets/projects/elle_hacks.png';
 import sc from './assets/projects/sportcred.png';
 import tg from './assets/projects/translation_game.png';
 import ms from './assets/projects/mock_shell.png';
@@ -95,7 +100,7 @@ export default function App() {
           alignItems="center"
           justifyContent="center">
 
-          <a class="resume" href='https://drive.google.com/file/d/14LLtvEO4l_amD1PZkN-Nq8OIEkJS91sX/view?usp=sharing'>
+          <a class="resume" href='https://drive.google.com/file/d/1e85bS5UmI4EdSx2azijVKKOhu6u-Ifsm/view?usp=sharing'>
             {'\u2728'} click here to view my resume! {'\u2728'}
           </a>
 
@@ -210,6 +215,7 @@ export default function App() {
               float="left"
               alignItems="start">
               <Carousel class="slides" breakPoints={breakPoints}>
+              <Item> <a href="#popup6" class="slidetitle"><p class="labels">FINANCE SIMULATOR</p></a> <img class="sideimage" position="absolute" border="0" alt="partybot" src={eh}/> </Item>
                 <Item> <a href="#popup5" class="slidetitle"><p class="labels">PARTYBOT</p></a> <img class="sideimage" position="absolute" border="0" alt="partybot" src={pb}/> </Item>
                 <Item> <a href="#popup1" class="slidetitle"><p class="labels">THIS SITE!</p></a> <img class="sideimage" position="absolute" border="0" alt="personalwebsite" src={pw}/> </Item>
                 <Item> <a href="#popup2" class="slidetitle"><p class="labels">SPORTCRED</p></a> <img class="sideimage" position="absolute" border="0" alt="sportcredproj" src={sc}/> </Item>
@@ -243,19 +249,19 @@ export default function App() {
             </p>
             <div className="endlinks">
               <a href="https://github.com/radwin01">
-                <img class="links" border="0" alt="github" src={git} />
+              <span className="first" ><FontAwesomeIcon className="icon" icon={faGithubSquare}/></span>
               </a>
 
-              <a href="https://www.linkedin.com/in/yara-r-81b044135/">
-                <img class="links" border="0" alt="linkedin" src={link} />
+              <a href="https://www.linkedin.com/in/yara-radwan/">
+              <span ><FontAwesomeIcon className="icon" icon={faLinkedin}/></span>
               </a>
 
               <a href="https://www.facebook.com/yr.rdwn011009/">
-                <img class="links" border="0" alt="facebook" src={fb} />
+              <span ><FontAwesomeIcon className="icon" icon={faFacebookSquare}/></span>
               </a>
 
-              <a href="mailto:y9rdwn0110@gmail.com">
-                <img class="links" border="0" alt="gmail" src={mail} />
+              <a href="mailto:yara.radwan@mail.utoronto.ca">
+              <span ><FontAwesomeIcon className="icon" icon={faEnvelope}/></span>
               </a>
 
             </div>
@@ -281,7 +287,7 @@ export default function App() {
 		 </p>
                   <div className="projectlink">
                     <a href="https://github.com/radwin01/PersonalWebsite">
-                      <img class="links" border="0" alt="github" src={git} width="70" height="70" />
+                    <span ><FontAwesomeIcon className="icon" icon={faGithub}/></span>
                     </a></div>
                 </div>
               </div>
@@ -299,7 +305,7 @@ export default function App() {
 		 </p>
                   <div className="projectlink">
                     <a href="https://github.com/radwin01/SPORTCRED">
-                      <img class="links" border="0" alt="github" src={git} width="70" height="70" />
+                    <span ><FontAwesomeIcon className="icon" icon={faGithub}/></span>
                     </a></div>
                 </div>
               </div>
@@ -315,7 +321,7 @@ export default function App() {
 		 </p>
                   <div className="projectlink">
                     <a href="https://github.com/radwin01/MockUnixShell">
-                      <img class="links" border="0" alt="github" src={git} width="70" height="70" />
+                    <span ><FontAwesomeIcon className="icon" icon={faGithub}/></span>
                     </a></div>
                 </div>
               </div>
@@ -331,7 +337,7 @@ export default function App() {
 		 </p>
                   <div className="projectlink">
                     <a href="https://github.com/radwin01/TranslationGame">
-                      <img class="links" border="0" alt="github" src={git} width="70" height="70" />
+                      <span ><FontAwesomeIcon className="icon" icon={faGithub}/></span>
                     </a></div>
                 </div>
                 </div>
@@ -347,11 +353,31 @@ export default function App() {
 		 </p>
                   <div className="projectlink">
                     <a href="https://github.com/radwin01/PartyBot-public">
-                      <img class="links" border="0" alt="github" src={git} width="70" height="70" />
+                    <span ><FontAwesomeIcon className="icon" icon={faGithub}/></span>
+                    </a></div>
+                </div>
+                </div>
+
+                <div id="popup6" class="overlay">
+                <div class="popup">
+                  <h2>💵 FINANCE SIMULATOR 💵 </h2>
+                  <a class="close" href="#sideprojects">&times;</a>
+                  <p class="content">
+                   Welcome to Finance Simulator [2021]. Once you enter, you will start off as a 16 year-old with a few dollars in savings. You will be given age-scenarios that will require you to make a financially concious decision and
+                   that affects your annual income, expenses and savings. Once the simulation is complete, you will receive your final results and hopefully be inspired to take control of your financial situation! Made for ElleHacks 2021,
+                  I worked on this product as part of a team and was in charge of front and back-end development (I used <span class="tech">React</span> and <span class="tech">Java Springboot</span>, BTW).
+                  This was my very first hackathon, and I could not be more satisfied with the experience! Not only did I make new friends, but my team won the Rogers Custom Award for having the most innovative product! 💳 
+		 </p>
+                  <div className="projectlink">
+                    <a href="https://github.com/radwin01/ellehacks2021">
+                    <span ><FontAwesomeIcon className="icon" icon={faGithub}/></span>
                     </a></div>
                 </div>
                 </div>
                 
+
+
+
                 </div>
 
     </div>

@@ -20,11 +20,6 @@ a, a:hover, a:link, a:active, a:visited {
   text-decoration: none;
 }
 
-.tech {
-  color: #45046a;
-  font-weight: bold;
-}
-
 .navbar {
   list-style-type: none;
   position: fixed;
@@ -103,10 +98,6 @@ a, a:hover, a:link, a:active, a:visited {
   margin-left: 35%;
   display: inline-block;
   text-align: center;
-}
-
-.intro-effect {
-  padding: 1%;
 }
 
 .resume-effect:hover {
@@ -222,6 +213,7 @@ a, a:hover, a:link, a:active, a:visited {
 .enjoy {
   text-align: center;
   left: 1%;
+  padding-right: 1.5%;
 }
 
 .position, .femposition, .composition {
@@ -352,9 +344,18 @@ a, a:hover, a:link, a:active, a:visited {
   opacity: 0;
 }
 
+.tech {
+  color: #45046a;
+  font-weight: bold;
+}
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
+}
+
+.intro-effect {
+  padding: 1%;
 }
 
 .popup {
@@ -551,7 +552,7 @@ a, a:hover, a:link, a:active, a:visited {
   transition: 0.6s ease-out;
 }
 
-.links:hover {    
+.links:hover, .icon:hover {    
   -webkit-transform: rotateZ(720deg);
   -moz-transform: rotateZ(720deg);
   transform: rotateZ(720deg);
@@ -595,4 +596,14 @@ a, a:hover, a:link, a:active, a:visited {
 		-webkit-transform: translateY(-10px);
 		transform: translateY(-10px);
 	}
+}
+
+
+.icon {
+  color: #2c003e;
+  font-size: 4vw;
+  margin-left: 1vw;
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
 }
