@@ -100,7 +100,7 @@ export default function App() {
           alignItems="center"
           justifyContent="center">
 
-          <a class="resume" href='https://drive.google.com/file/d/1gNy2WuHP2NsJb5KwRedKhRkFNlLSzry-/view?usp=sharing'>
+          <a class="resume" href='https://drive.google.com/file/d/1laGTX5JvCakRYZkYQy4Ba7yQlQRojAOz/view?usp=sharing'>
             {'\u2728'} click here to view my resume! {'\u2728'}
           </a>
 
@@ -270,7 +270,7 @@ export default function App() {
             <li className="credits">
         <p> my personal website was created with React and is hosted on Netlify,
         with special help from Evergreen-UI and Textanim. <br /><br />
-        Copyright © 2021 Yara Radwan
+        Copyright © 2021 Yara Radwan (last updated: Jan 2021)
       </p>
       </li>
          </ul>
