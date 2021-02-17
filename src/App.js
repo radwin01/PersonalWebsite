@@ -140,7 +140,7 @@ export default function App() {
                 elevation={3}
                 float="center"
                 alignItems="center">
-                <p class="para"> Hiya! My name is Yara Radwan. Welcome! 😺 <br /><br />I am currently a second year
+                <p class="para"> Hiya! My name is Yara Radwan. Welcome! 😺 <br /><br />I am currently a third year
         Computer Science Co-op student at the University of Toronto, with a
         specialist in Software Engineering and a major in Statistics. <br /> (current cGPA: <b>3.94</b> / 4.00) <br /><br />
 
@@ -270,7 +270,7 @@ export default function App() {
             <li className="credits">
         <p> my personal website was created with React and is hosted on Netlify,
         with special help from Evergreen-UI and Textanim. <br /><br />
-        Copyright © 2021 Yara Radwan (last updated: Jan 2021)
+        Copyright © 2020 Yara Radwan (last updated: Feb 2021)
       </p>
       </li>
          </ul>
