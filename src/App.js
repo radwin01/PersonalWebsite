@@ -100,7 +100,7 @@ export default function App() {
           alignItems="center"
           justifyContent="center">
 
-          <a class="resume" href='https://drive.google.com/file/d/1laGTX5JvCakRYZkYQy4Ba7yQlQRojAOz/view?usp=sharing'>
+          <a class="resume" href='https://drive.google.com/file/d/1iSmTwCaH-V4kjZww_8DbQWCphZTH-F9p/view?usp=sharing'>
             {'\u2728'} click here to view my resume! {'\u2728'}
           </a>
 
@@ -160,20 +160,46 @@ export default function App() {
               </div>
             </li>
 
+            <li class="work">
+                <div class="korotu"> <p class="korotu-title">Korotu Technology <span class="name">MAY 2021 - AUG 2021</span ></p> </div>
+              </li>
+              <li class="position"> <span class="work-coop">Software Engineer and AI Researcher</span> </li>
+              <li class="work-desc"> <p class="coop-desc">For my very first co-op workterm, I will be working at Korotu Technology as a Software Engineer (Full-Stack)
+              and Artificial Intelligence Researcher Intern! I am so honoured to be able to work at this wonderful startup with a commendable mission of mitigating the global concern
+              of climate change. I am looking forward to all the lessons and experience I will gain with my first dive into the tech industry, and I can't wait
+              to start!<br /> <br /></p>
+            <div class="linkkor">
+                    <a class="kor" href="https://www.korotu.com/home">LEARN MORE ABOUT KOROTU</a> </div>
+             </li>
+
+             <li class="uber">
+                <div class="car"> <p class="uber-title"> Uber <span class="name">MAR 2021 - NOV 2021</span ></p> </div>
+              </li>
+              <li class="position"> <span class="fellow">Career Prep Fellow</span> </li>
+              <li class="uber-desc"> <p class="fellow-desc"> I was selected as one of 40 students (out of >1100 applicants!) to be apart
+              of Uber Career Prep's 2021 cohort. This fellowship allows undergraduate CS students to learn directly from Uber engineers and
+              managers. Over the course of the year, I will be able to gain invaluable insight on how a big tech company operates on all
+              levels, improve my technical interviewing confidence with lots of mock Uber interviews, challenge and increase my programming knowledge through monthly
+              homework assignments, and work towards becoming the best computer scientist I can be. I have already learned so much from the engineers at Uber, 
+              and I can't wait to see what else is in store!<br /> <br /></p>
+            <div class="linkucp">
+                    <a class="ucp" href="https://www.hiddengeniusproject.org/ubercareerprep/">LEARN MORE ABOUT UBER CAREER PREP</a> </div>
+             </li>
+
               <li class="ta">
-                <div class="uoft"> <p class="uoft-title"> University of Toronto <span class="name1">SEP 2020 - APR 2021</span ></p> </div>
+                <div class="uoft"> <p class="uoft-title"> University of Toronto <span class="name">SEP 2020 - APR 2021</span ></p> </div>
               </li>
               <li class="position"> <span class="uoft-ta">Teaching Assistant</span> </li>
               <li class="ta-desc"> <p class="uoft-desc">In the fall semester, I was offered to TA CSCA08 (Introduction to Computer Science I), a course taken by
             first year Computer Science students. Some of my responsibilities included: attending lectures and helping students complete weekly worksheets,
-            answering questions on Piazza, invigilating and grading the midterms and the final exam. I had a wonderful time being a Teaching Assistant and I
-            am very looking forward to TA-ing CSCA48 (Introduction to Computer Science II) in the upcoming winter semester! <br /> <br /></p>
+            answering questions on Piazza, invigilating and grading the midterms and the final exam. I am now happily (and quite busily) working a double contract TA-ing 
+            CSCA48 (Introduction to Computer Science II) this winter semester. <br /> <br /></p>
             <div class="linka08">
-                    <a class="a08" href="https://www.utsc.utoronto.ca/~atafliovich/csca08/index.html">LEARN MORE ABOUT CSCA08</a> </div>
+                    <a class="a08" href="https://csca48.github.io/w21tutorials/">LEARN MORE ABOUT CSCA48</a> </div>
              </li>
 
              <li class="femin">
-                <div class="feminstem"><p class="feminstem-title">FeminSTEM <span class="name2">AUG 2020</span></p></div>
+                <div class="feminstem"><p class="feminstem-title">FeminSTEM <span class="name">AUG 2020</span></p></div>
               </li>
               <li class="femposition"> <span class="fem-mentor">Mathematics Mentor</span> </li>
               <li class="fem-desc"> <p class="mentor-desc">In the summer of 2020, I was offered to be a Mathematics Mentor for FeminSTEM, an initiative made 
@@ -185,7 +211,7 @@ export default function App() {
              </li>
 
              <li class="comtel">
-                <div class="commarket"> <p class="comtel-title">Comtel Marketing <span class="name3">JUN 2019 - AUG 2019</span ></p> </div>
+                <div class="commarket"> <p class="comtel-title">Comtel Marketing <span class="name">JUN 2019 - AUG 2019</span ></p> </div>
               </li>
               <li class="composition"> <span class="sales">Sales Associate</span> </li>
               <li class="com-desc"> <p class="sales-desc">My first part-time job was at Comtel Marketing, located at the heart of downtown Toronto. As a Sales Associate,
@@ -270,7 +296,7 @@ export default function App() {
             <li className="credits">
         <p> my personal website was created with React and is hosted on Netlify,
         with special help from Evergreen-UI and Textanim. <br /><br />
-        Copyright © 2020 Yara Radwan (last updated: Feb 2021)
+        Copyright © 2020 Yara Radwan (last updated: Mar 2021)
       </p>
       </li>
          </ul>
