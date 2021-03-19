@@ -178,7 +178,7 @@ a, a:hover, a:link, a:active, a:visited {
   font-weight: 70;
 }
 
-.ta, .femin, .comtel {
+.ta, .femin, .comtel, .uber, .work {
   display: block;
   overflow: auto;
   width: 80%;
@@ -192,18 +192,18 @@ a, a:hover, a:link, a:active, a:visited {
   margin-left: 5%;
 }
 
-.femin, .comtel {
+.femin, .comtel, .uoft, .ta, .uber {
   margin-top: 3%;
 }
 
-.uoft-title, .feminstem-title, .comtel-title {
+.uoft-title, .feminstem-title, .comtel-title, .uber-title, .korotu-title {
   margin-left: 5%;
   width: 80%;
   margin-top: 7px;
   font-weight: bolder;
 }
 
-.name1, .name2, .name3 {
+.name {
   font-size: 1.3vw;
   display: block;
   overflow: auto;
@@ -234,17 +234,16 @@ a, a:hover, a:link, a:active, a:visited {
   font-weight: lighter; 
 }
 
-.uoft-ta, .fem-mentor, .sales {
+.uoft-ta, .fem-mentor, .sales, .work-coop, .fellow {
   margin-left: 5%;
 }
 
-.uoft-desc, .mentor-desc, .sales-desc {
+.uoft-desc, .mentor-desc, .sales-desc, .coop-desc, .fellow-desc {
   margin-left: 2vw;
   margin-right: 1vw;
 }
 
-
-.ta-desc, .fem-desc, .com-desc {
+.ta-desc, .fem-desc, .com-desc, .work-desc, .uber-desc {
   background-color: #f9bcdd;
   display: block;
   padding-top: 0.5%;
@@ -262,7 +261,7 @@ a, a:hover, a:link, a:active, a:visited {
   font-weight: lighter; 
 }
 
-.linka08, .linkfem {
+.linka08, .linkfem, .linkkor, .linkucp {
   margin-top: 2%;
   margin-left: 21%;
   justify-self: center;
@@ -272,7 +271,7 @@ a, a:hover, a:link, a:active, a:visited {
   margin-left: 24%;
 }
 
-.linka08 a, .linkfem a {
+.linka08 a, .linkfem a, .linkkor a, .linkucp a {
   color: #b2deec;
   font-weight: bold;
   border-style: solid;
@@ -281,11 +280,11 @@ a, a:hover, a:link, a:active, a:visited {
   border-color: #0a043c;
 }
 
-.linka08 a:hover, .linkfem a:hover {
+.linka08 a:hover, .linkfem a:hover, .linkkor a:hover, .linkucp a:hover {
   color: rgb(0, 0, 0);
 }
 
-.a08, .fem {
+.a08, .fem, .ucp, .kor {
   font-family: 'Nunito', sans-serif;
   text-transform: uppercase;
   font-size: 1.8vw;
@@ -300,7 +299,14 @@ a, a:hover, a:link, a:active, a:visited {
   white-space: nowrap;
 }
 
-.a08:hover, .fem:hover {
+.ucp {
+  margin-left: -23px;
+}
+.kor {
+  margin-left: 27px;
+}
+
+.a08:hover, .fem:hover, .ucp:hover, .kor:hover {
   background-image: linear-gradient(to right, #bedcfa 33.3%, #98acf8 66.6%, #b088f9 33.3%, #da9ff9 16.65%);
   animation: slidebg 2s linear infinite;
 }
